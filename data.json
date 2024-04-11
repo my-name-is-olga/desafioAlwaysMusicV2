@@ -1,0 +1,22 @@
+{
+"agregarEstudiante":{
+    "text": "insert into registro(nombre, rut, curso, nivel) values($1, $2, $3, $4)",
+    "values": ["olga", "111", "saxofón", "1"]
+},
+"consultarEstudiantes":{
+    "text": "select * from registro",
+    "rowMode": "array"
+},
+"rutEstudiante":{
+    "text": "select * from registro where rut = $1",
+    "values": ["18561005-4"]
+},
+"actualizarEstudiante":{
+    "text": "update registro set nivel = $1 where id = $2",
+    "values": ["5", "10"]
+},
+"eliminarEstudiante":{
+    "text": "delete from registro where id = $1",
+    "values": ["72"]
+}
+}
